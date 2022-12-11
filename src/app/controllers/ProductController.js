@@ -27,6 +27,7 @@ class ProductController {
       pathArr.forEach((pathItem) => {
         path += '/' + pathItem;
       });
+
       if (process.env.ENV === 'development') {
         urlFile = process.env.HOST + ':' + process.env.PORT + path;
       } else {
